@@ -6,7 +6,7 @@ pipeline {
                 sh 'maven clean package'
             }
             post {
-                sucess {
+                success {
                     echo 'Now Archiving...'
                     archiveArtifacts artifacts: '**/target/*.war'
                 }
