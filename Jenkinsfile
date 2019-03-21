@@ -24,7 +24,7 @@ pipeline {
         stage ('Deploy to prod') {
             steps {
                 timeout(time:5, unit:'DAYS'){
-                    input message: 'Aprovado para Prodution Deploy?', submitter: pgomes
+                    input message: 'Aprovado para Prodution Deploy?', submitter: 'pgomes'
                 }
                 build job: 'deploy-to-prod'
             }
