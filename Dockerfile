@@ -4,4 +4,4 @@ ADD ./target/*.war /usr/local/tomcat/webapps
 
 EXPOSE 18081
 
-CMD [ "catalina.sh", "run" ]
+CMD [ "startup.sh", "run" ]
